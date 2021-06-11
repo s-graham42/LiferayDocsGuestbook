@@ -1,2 +1,24 @@
 .guestbook-web {
 }
+
+.btn-default {
+    background-color: #c9c9f9;
+    box-shadow: 2px 4px 8px grey;
+}
+
+btn-default:hover {
+    background-color: #eeeeff;
+    border-color: #cdced9;
+    color: #272833;
+}
+
+#portlet_com_liferay_docs_guestbook_portlet_GuestbookWebPortlet {
+    background-color: #f5f5fd;
+    border: 1px solid #d4d4d4;
+    border-radius: 7px;
+}
+.first {
+    font-family: 'Brush Script MT', cursive !important;
+    font-size: 1.4rem;
+}
+

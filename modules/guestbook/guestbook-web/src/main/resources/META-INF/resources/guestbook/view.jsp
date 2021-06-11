@@ -20,6 +20,7 @@
     <liferay-ui:search-container-row className="com.liferay.docs.guestbook.model.GuestbookEntry" modelVar="entry">
         <liferay-ui:search-container-column-text property="message" />
         <liferay-ui:search-container-column-text property="name" />
+        <liferay-ui:search-container-column-text property="entryId" />
         <liferay-ui:search-container-column-jsp align="right" path="/guestbook/entry_actions.jsp" />
     </liferay-ui:search-container-row>
 

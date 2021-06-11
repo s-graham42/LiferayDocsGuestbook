@@ -64,7 +64,7 @@ public class GuestbookWebPortlet extends MVCPortlet {
 		String email = ParamUtil.getString(request, "email");
 		String message = ParamUtil.getString(request, "message");
 		long guestbookId = ParamUtil.getLong(request, "guestbookId");
-		long entryId = ParamUtil.getLong(request, "entryid");
+		long entryId = ParamUtil.getLong(request, "entryId");
 
 		if (entryId > 0) {
 			try {
