@@ -1,0 +1,37 @@
+dependencies {
+	compile project(":modules:guestbook:guestbook-api")
+
+	compileOnly group: "com.liferay", name: "com.liferay.petra.io"
+	compileOnly group: "com.liferay", name: "com.liferay.petra.lang"
+	compileOnly group: "com.liferay", name: "com.liferay.petra.string"
+	compileOnly group: "com.liferay", name: "com.liferay.portal.aop.api"
+	compileOnly group: "com.liferay.portal", name: "com.liferay.portal.kernel"
+	compileOnly group: "org.osgi", name: "org.osgi.annotation.versioning"
+	compileOnly group: "org.osgi", name: "org.osgi.core"
+	compileOnly group: "org.osgi", name: "org.osgi.service.component.annotations"
+    compileOnly 'com.liferay.portal:com.liferay.portal.kernel'
+	compileOnly 'com.liferay.portal:com.liferay.portal.kernel'
+	compileOnly 'com.liferay.portal:com.liferay.portal.kernel'
+    compileOnly 'com.liferay.portal:com.liferay.portal.kernel'
+    compileOnly 'com.liferay.portal:com.liferay.portal.kernel'
+    compileOnly 'com.liferay.portal:com.liferay.portal.kernel'
+	compileOnly 'com.liferay.portal:com.liferay.portal.kernel'
+	compileOnly 'com.liferay.portal:com.liferay.portal.kernel'
+    compileOnly 'com.liferay.portal:com.liferay.portal.kernel'
+    compileOnly 'com.liferay.portal:com.liferay.portal.kernel'
+    compileOnly 'com.liferay.portal:com.liferay.portal.kernel'
+}
+
+buildService {
+	apiDir = "../guestbook-api/src/main/java"
+}
+
+group = "com.liferay.docs.guestbook"
+
+tasks.withType(JavaCompile) {
+
+	// Generated classes using Jodd library are unable to be read when compiled against JDK 11
+
+	sourceCompatibility = JavaVersion.VERSION_1_8
+	targetCompatibility = JavaVersion.VERSION_1_8
+}
